@@ -1,12 +1,17 @@
-import React from "react";
-
-
 const cityName = {
   textAlign: "center",
-  fontSize: "1.5rem",
+  fontSize: "2rem",
   fontWeight: "bold",
   color: "#333",
-}
+};
+
+const containerStyle = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  height: "100px", // Adjust height as needed
+};
 
 function CityDateDisplay({ data }) {
   // Convert the current date to a more readable format
@@ -17,7 +22,7 @@ function CityDateDisplay({ data }) {
   });
 
   return (
-    <div className="container">
+    <div className="container city-date-display" style={containerStyle}>
       <div className="location">
         <p style={cityName}>{data.name}</p> {/* Display city name */}
         <p>{date}</p> {/* Display formatted date */}

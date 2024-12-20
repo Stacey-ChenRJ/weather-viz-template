@@ -9,7 +9,7 @@ const cityNameField = {
 
 function LocationField({ location, setLocation, searchLocation }) {
   return (
-    <div className="search">
+    <div className="search location-field" style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "40px" }}>
       <input
         style={cityNameField}
         value={location}

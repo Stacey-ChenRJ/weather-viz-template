@@ -1,107 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.app {
+  background: linear-gradient(to bottom, #55cff1, #4A91FF); /* Gradient background from top to bottom */
+  width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 body {
-  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 249, 249); /* Keep the original body background color */
 }
 
-p {
-  font-size: 1.6rem;
+.five-day-forecast p {
+  color: #FFFFFF; /* Set text color to white */
 }
 
-h1 {
-  font-size: 6rem;
+.city-date-display .location {
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Removes any default padding */
 }
 
-.app {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-color: rgba(0,0,0,0.4);
-  color: #fff;
+.city-date-display p {
+  margin: 0; /* Removes any margin between the <p> elements */
+  padding: 0; /* Optional: ensures no padding */
 }
 
-.app:before {
-  content: '';
-  background: url('./assets/sunset.jpg') no-repeat center center/cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.weather-city-display {
+  background: radial-gradient(circle, rgba(67, 69, 70, 0.5), rgba(61, 131, 236, 0.5)); 
+  padding: 10px 20px; /* Slightly adjust padding for better spacing */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center text */
+  margin-bottom: 15px; /* Reduce space below */
+  color: white; /* Change text color to white */
+  height: auto; /* Allow container height to auto-adjust based on content */
 }
 
-.app .search {
-  text-align: center;
-  padding: 1rem;
+.temperature-clouds {
+  margin-bottom: 5px; /* Reduce space below temperature and clouds */
 }
 
-.app input {
-  padding: .7rem 1.5rem;
-  font-size: 1.2rem;
-  border-radius: 25px;
-  border: 1px solid rgba(255,255,255, 0.8);
-  background: rgba(255,255,255, 0.1);
-  color: #f8f8f8;
+.temperature {
+  font-size: 90px; /* Adjust temperature font size to reduce height */
+  font-weight: normal; /* Make font weight thinner */
+  margin-top: 0; /* Remove margin above temperature */
 }
 
-::placeholder {
-  color: #f8f8f8;
+.weather-stats {
+  display: flex; /* Arrange horizontally */
+  justify-content: space-around; /* Space elements evenly */
+  gap: 15px; /* Reduce space between stats */
+  padding: 5px; /* Adjust padding for stats */
 }
-
-.container {
-  max-width: 700px;
-  height: 700px;
-  margin: auto;
-  padding: 0 1rem;
-  position: relative;
-  top: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.app .top {
-  width: 100%;
-  margin: 1rem auto;
-}
-
-.app .description {
-  position: relative;
-  right: -90%;
-  transform-origin: 0 0;
-  transform: rotate(269deg);
-}
-
-.app .bottom {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  width: 100%;
-  margin: 1rem auto;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: rgba(255,255,255, 0.2);
-}
-
-.bold {
-  font-weight: 700;
-}
-
-
-
-
-
-
-
-

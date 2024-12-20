@@ -4,9 +4,10 @@ import LocationField from "./components/LocationField";
 import CityDateDisplay from "./components/CityDateDisplay";
 import WeatherCityDisplay from "./components/WeatherCityDisplay";
 import FiveDayForecast from "./components/FiveDayForecast";
+import "./index.css";
 
 function App() {
-  const API = "b2efe5292c39fd73143a306f48ffcd6f";
+  const API = "bc0d0b017b94f6d25977609eb2aa9a13";
   const [currentData, setCurrentData] = useState({});
   const [forecastData, setForecastData] = useState([]);
   const [location, setLocation] = useState("");
